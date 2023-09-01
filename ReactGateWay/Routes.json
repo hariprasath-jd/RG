@@ -1,0 +1,127 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7041"
+  },
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/Data/Validate",
+      "DownstreamScheme": "https",
+      "UpstreamPathTemplate": "/asp-net/Data/Validate",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7095
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/asp-net/Data/Register",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/Data/Register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7095
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/asp-net/Images/LoadAll",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/Images/LoadAll",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7260
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/asp-net/Images/Create",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/Images/Create",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7260
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/asp-net/Data/GetInfo/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/Data/GetInfo/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7095
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/asp-net/Data/CreateInfo",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamPathTemplate": "/api/Data/CreateInfo",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7095
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/asp-net/Images/Load/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/Images/Load/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7260
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/asp-net/Images/LoadImg/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/api/Images/LoadImg/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7260
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/asp-net/Images/Update",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "DownstreamPathTemplate": "/api/Images/Update",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7260
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/asp-net/Images/Delete/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "DownstreamPathTemplate": "/api/Images/Delete/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7260
+        }
+      ]
+    }
+  ]
+}
